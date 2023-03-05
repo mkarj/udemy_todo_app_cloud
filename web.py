@@ -1,4 +1,10 @@
-# terminal: streamlit run web.py
+# terminal: streamlit run web.py -> selaimessa localhost sivu...
+#
+# deployment to cloud:
+# - pip freeze > requirements.txt
+# - in project (repository) only files: web.py, functions.py, todos.txt, requirements.txt, pages/about.py
+# - streamlit local host sivulta -> deploy
+# - login github tunnuksilla
 
 import streamlit as st
 import functions
@@ -29,3 +35,4 @@ st.text_input(label=" ", placeholder="Add new todo", on_change=add_todo, key='ne
 
 # for develoment and debugging purposes
 # st.session_state
+
